@@ -1,0 +1,28 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This application will let you to add any burger name that you want and eat it, it will move to other list",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfsilvah/burger.git"
+  },
+  "keywords": [
+    "burger"
+  ],
+  "author": "Francisco Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfsilvah/burger/issues"
+  },
+  "homepage": "https://github.com/jfsilvah/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
+}
