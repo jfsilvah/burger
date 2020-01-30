@@ -1,0 +1,69 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <br>
+            <h1 class="titleText">Where is my burger?</h1>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <center> <img class="img-burger" src="/assets/images/homer_burger.gif"></center>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 addBurger">
+            <h3 class="miniHeading">Which burger do you want for Homer?</h3>
+            <center> <img src="/assets/images/homer_ordering.jpg"></center>
+            <br>
+            <div class="moveMe">
+                <form class="create-update-form" action="/insertOne" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="burger_name"></input><br>
+                        <button class="btn btn-warning" type="submit" style="background-color:beige;">Place the Order!
+                        </button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 burgers">
+            <center> <img class="img-burger" src="/assets/images/homer_thinking.png"></center>
+            <h3 class="miniHeading">Burgers Ordered</h3>
+            <br>
+            <ul>
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <div class="showBurger">
+                    <p>
+                        {{this.burger_name}}</p>
+                    <form action="/updateOne/{{this.id}}" method="POST">
+                        <input type="hidden" name="devoured" value="1">
+                        <button type="submit" class="btn" style="background-color: #5DBCD2 ;">I will take this!</button>
+                    </form>
+                    <br>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6 devoured">
+            <center> <img class="img-burger" src="/assets/images/homer_eating.gif"></center>
+            <h3 class="miniHeading">Burgers Devoured</h3>
+            <br>
+            <ul>
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <div class="devourBurger">
+                    <p>
+                      {{this.burger_name}}</p>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

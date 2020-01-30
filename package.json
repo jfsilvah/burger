@@ -1,28 +1,27 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "This application will let you to add any burger name that you want and eat it, it will move to other list",
-  "main": "server.js",
+  "description": "Week 14- Homework (Node Express Handlebars)",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jfsilvah/burger.git"
+    "url": "git+https://github.com/alinavo/burger.git"
   },
-  "keywords": [
-    "burger"
-  ],
-  "author": "Francisco Silva",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jfsilvah/burger/issues"
+    "url": "https://github.com/alinavo/burger/issues"
   },
-  "homepage": "https://github.com/jfsilvah/burger#readme",
+  "homepage": "https://github.com/alinavo/burger#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1"
-  }
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {}
 }

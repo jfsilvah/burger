@@ -1,11 +1,5 @@
-# Eat Da Burger App
+# Eat Da Burger
 
-## Overview
-
-Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
-The app was developed using Express, Node, MySQL and Handlebards using the View-Controller Model.
-
-You will enter a burger name and it will be available to be eaten, once the burger has been eaten it will moved to a different list.
-
-Here is the link to test the complete app in Heroku:
+This app will allow to the user to create and "eat" burgers using MySQL, Node, Express, Handlebars and ORM.
+You can enter a burger and it will appear in the first list ready to be devoured by Homer, once Home has eaten the burger it will appear in the second list.
 

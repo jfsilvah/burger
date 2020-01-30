@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/main.jpg");
+    background-size: 100%;
+    background-color:	#00549D;
+    font-family: 'Skranji', cursive;
+}
+
+.titleText {
+    text-align: center;
+    color: gold;
+    font-size: 60px;
+    
+}
+.miniHeading {
+    color: gold;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.addBurger {
+    margin-left: auto;
+    margin-right: auto;
+}
+.moveMe {
+    text-align: center;
+    margin: 0 auto 3% 0;
+
+}
+.showBurger {
+    text-align: center;
+    font-size: 28px;
+}
+.devourBurger
+{
+    text-align: center;
+    font-size: 28px;
+}
+.btn {
+    padding-top: 0px;
+}
+p {
+    color: palegoldenrod;
+}
+.img-burger{
+    width: 40%;
+    height: 40%;
+}
+
